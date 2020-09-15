@@ -1,0 +1,36 @@
+<div class="container p-4">
+    <div class="row">
+        {{#each barberos}}
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-header">
+
+                    <h3>{{PrimerNombre}} {{PrimerApellido}}</h3>
+
+                </div>
+                <div class="card-body">
+                    <p class="m-2">{{nombres}}</p>
+                    <p class="m-2">{{Identificacion}}</p>
+                    <p class="m-2">{{Barberia}}</p>
+                    <p class="m-2">{{Valoracion}}</p>
+                </div>
+            </div>
+        </div>
+        {{else}}
+        <div class="row md-4 mx-auto">
+            <div class="text-center">
+                <p style="font-size: 2em;">No tienes ningún barbero agregado.</p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="text-center">
+                <a href="/addServices" class="btn btn-success btn-block">¡Agrega un barbero!</a>
+            </div>
+        </div>
+    </div>
+</div>

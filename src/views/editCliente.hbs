@@ -1,0 +1,47 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3>Editar un cliente</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/editCliente/{{cliente.Identificacion}}" method="POST">
+                        <div class="form-group">
+                            <input required type="number" name="Identificacion" placeholder="Identificacion" value="{{cliente.Identificacion}}" class="form-control"
+                                autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input required type="text" name="PrimerNombre" placeholder="Primer Nombre" value="{{cliente.PrimerNombre}}" class="form-control"
+                                autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="SegundoNombre" placeholder="Segundo Nombre" value="{{cliente.SegundoNombre}}" class="form-control"
+                                autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input required type="text" name="PrimerApellido" placeholder="Primer apellido" value="{{cliente.PrimerApellido}}" class="form-control"
+                                autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="SegundoApellido" placeholder="Segundo Apellido" value="{{cliente.SegundoApellido}}" class="form-control"
+                                autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input required type="number" name="Celular" placeholder="Número telefónico" value="{{cliente.Celular}}"
+                                class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input required type="text" name="Direccion" placeholder="Dirección" value="{{cliente.Direccion}}" class="form-control"> 
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">
+                                Agregar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

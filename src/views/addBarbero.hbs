@@ -1,0 +1,51 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3>Agrega un nuevo cliente</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/addBarbero" method="POST">
+                        <div class="form-group">
+                            <input required type="number" name="Identificacion" placeholder="Identificacion" class="form-control"
+                                autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input required type="text" name="PrimerNombre" placeholder="Primer Nombre" class="form-control"
+                                autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="SegundoNombre" placeholder="Segundo Nombre" class="form-control"
+                                autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input required type="text" name="PrimerApellido" placeholder="Primer apellido" class="form-control"
+                                autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="SegundoApellido" placeholder="Segundo Apellido" class="form-control"
+                                autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input required type="number" name="Telefono" placeholder="Telefono" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input required type="number" name="Valoracion" placeholder="Valoracion"
+                                class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input required type="number" name="BarberiaFK" placeholder="Barberia"
+                                class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">
+                                Agregar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
